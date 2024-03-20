@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    @apply bg-green-500 text-white rounded-sm my-4;
+  }
+
+  .btn:hover {
+    @apply bg-green-600 !important;
+  }
+
+  .modal-btn:hover {
+    @apply bg-green-400 text-white;
+  }
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .loading {
+    /* @apply border-gray-800; */
+    border: 5px solid gray;
+    border-top-color: rgba(75, 222, 129, 0.1);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    animation: spinner 2s linear infinite;
+    margin: 0 auto;
+  }
+
+  .current {
+    @apply border-2 border-green-500 border-b-0 rounded-t-md relative  bg-white;
+    top: 2px;
+  }
+
+  .recovery-links {
+    @apply p-2 text-sm cursor-pointer font-medium;
+  }
+
+  .align-center {
+    @apply w-5/6 max-w-5xl mx-auto;
+  }
+
+  .card-content span:nth-last-child(3) {
+    @apply bg-orange-400;
+  }
+  .card-content span:nth-last-child(2) {
+    @apply bg-purple-500;
+  }
+  .card-content span:nth-last-child(1) {
+    @apply bg-purple-300 text-gray-100;
+    cursor: pointer;
+  }
+
+  .mgt-cards-grid {
+    display: grid;
+  }
+  .mgt-cards-grid article:last-child {
+    @apply sm:col-span-12;
+  }
+}
