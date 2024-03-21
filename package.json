@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-dotenv && react-scripts start",
     "dev": "vite",
-    "build": "react-dotenv && react-scripts build && vite build",
-    "serve": "react-dotenv && serve build",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -37,10 +35,5 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.6"
-  },
-  "react-dotenv": {
-    "whitelist": [
-      "API_URL"
-    ]
   }
 }
