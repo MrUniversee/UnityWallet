@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom'
 const MgtCard = React.lazy(() => import('./MgtCards'))
 const Management = () => {
   const { features } = useFetchContent()
-  console.log(features)
   return (
     <div className="py-8 mb-4">
       <Title

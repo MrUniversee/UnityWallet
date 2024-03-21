@@ -21,7 +21,7 @@ export const useFetchContent = () => {
         const { url } = image.fields.file
         return { id, title, desc, url }
       })
-      console.log(data)
+      // console.log(data)
       setFeatures(data)
       setIsLoading(false)
     } catch (error) {

@@ -29,7 +29,7 @@ const Landing = () => {
       <div className="loading border-green-500 border-t-gray-400 mt-4"></div>
     )
   }
-  console.log(data)
+
   // const response = data.slice(0, 3)
   // const mgtData = response.map((item) => {
   //   const { id } = item.sys
