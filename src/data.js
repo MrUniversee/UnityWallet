@@ -76,10 +76,10 @@ export const MgtData = [
 ]
 
 export const wallets = [
-  { id: nanoid, name: 'Trust wallet', logo: trust },
+  { id: nanoid(), name: 'Trust wallet', logo: trust },
   { id: nanoid(), name: 'metamask wallet', logo: metamask },
   { id: nanoid(), name: 'coinbase wallet', logo: coinbase },
-  { id: nanoid, name: 'Ledger wallet', logo: ledger },
+  { id: nanoid(), name: 'Ledger wallet', logo: ledger },
   { id: nanoid(), name: 'exodus wallet', logo: exodus },
   { id: nanoid(), name: 'safepal wallet', logo: safepal },
   { id: nanoid(), name: 'uniswap wallet', logo: uniswap },

