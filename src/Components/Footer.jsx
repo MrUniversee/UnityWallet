@@ -10,11 +10,11 @@ const Footer = () => {
             <span className="text-green-500 ml-2">Unity</span>Wallet
           </NavLink>
         </div>
-        <div className="links flex text-2xl gap-4 mt-2 ">
+{/*         <div className="links flex text-2xl gap-4 mt-2 ">
           <BsTwitter />
           <BsFacebook />
           <BsReddit />
-        </div>
+        </div> */}
       </div>
     </footer>
   )
